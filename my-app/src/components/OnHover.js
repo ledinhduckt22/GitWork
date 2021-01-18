@@ -37,7 +37,11 @@ class OnHover extends Component {
         return (
             <div class="hoverMe">
             <Title onMouseEnter={() => this.setState({ bool: true })} onMouseLeave={() => this.setState({ bool: false })}>
+<<<<<<< HEAD
               Goood Job gio minh moi biet 
+=======
+              Goood Job thang cu ga
+>>>>>>> 59a854fdc67acef0f90fc9db4a868b938932b6a4
             </Title>
             <Wrapper>
                 {
