@@ -47,7 +47,7 @@ class HelloWorld extends Component {
                 Link Button with styles
                 </Button>
                 <TomatoButton>
-                    Goood job
+                    Goood job man
                 </TomatoButton>
             </Wrapper>
         )
