@@ -3,11 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import TodoApp from './containers/TodoApp';
+import rootReducer from './reducers/rootReducers';
+
+
+//initialState
+const initialState = {}
+
+//Create Store
+const store = createStore(rootReducer, initialState);
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <TodoApp />
+  </Provider>,
   document.getElementById('root')
 );
 
